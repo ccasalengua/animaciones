@@ -1,2 +1,2 @@
-# animaciones
+# Animaciones
 Curso básico de animaciones
