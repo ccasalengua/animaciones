@@ -62,7 +62,7 @@ $browser-context: 16; // Default
 		background: #141414;
 		transition: background ease 0.3s;
 		position: absolute;
-		font-size: 1.3em;
+		font-size: 1.3rem;
 		left: 100%;
 		z-index: 2;
 		
@@ -121,15 +121,74 @@ $browser-context: 16; // Default
 	}
 }
 
-	
-	
-/*KEYFRAMES*/
 
-@keyframes fondo {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: -800px 0;
-	}
+/*--------------------------- FONDO -----------------------*/
+.ni-fondo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50rem;
+	height: rem(450);
+	background: url("../images/fondo.jpg") 0 0 repeat-x transparent;
+	background-size: cover;
+	overflow: hidden;
+	border: rem(2) solid #000;
+
+	
 }
+
+.ni-fondo:after {
+	content: "";
+	position: absolute;
+	background: url("../images/sol.png") 0 0 no-repeat transparent;
+	background-size: 100%;
+	top: rem(20);
+	right: rem(20);
+	width: rem(100);
+	height: rem(100);
+	z-index: 2;
+	border-radius: 50%;
+}
+
+/*------------------------ END FONDO -----------------------*/
+
+/*--------------------------- COCHE -----------------------*/
+
+.ni-coche {
+	position: absolute;
+	bottom: rem(58);
+	left: calc(50% - 100px);
+	background: url("../images/coche.png") no-repeat 0 0 transparent;
+	text-indent: -999rem;
+	width: rem(200);
+	height: rem(75);
+	background-size: 100%;
+	
+}
+
+/*------------------------- END COCHE -----------------------*/
+
+
+/*--------------------------- RUEDAS -----------------------*/
+
+.ni-coche:before, .ni-coche:after {
+	content: "";
+	position: absolute;
+	top: rem(37);
+	left: rem(14);
+	background: url("../images/rueda.png") 0 0 no-repeat transparent;
+	background-size: 100%;
+	z-index: 2;
+	width: rem(37);
+	height: rem(37);
+}
+
+.ni-coche:after {
+	left: rem(141);
+}
+
+/*------------------------- END RUEDAS -----------------------*/
+
+
+/*KEYFRAMES*/
