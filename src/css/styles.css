@@ -99,7 +99,12 @@
   background: url("../images/fondo.jpg") 0 0 repeat-x transparent;
   background-size: cover;
   overflow: hidden;
-  border: 0.125rem solid #000; }
+  border: 0.125rem solid #000;
+  animation-name: fondo;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 .ni-fondo:after {
   content: "";
@@ -123,7 +128,11 @@
   text-indent: -999rem;
   width: 12.5rem;
   height: 4.6875rem;
-  background-size: 100%; }
+  background-size: 100%;
+  animation-name: coche;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; }
 
 /*------------------------- END COCHE -----------------------*/
 /*--------------------------- RUEDAS -----------------------*/
@@ -136,10 +145,31 @@
   background-size: 100%;
   z-index: 2;
   width: 2.3125rem;
-  height: 2.3125rem; }
+  height: 2.3125rem;
+  animation-name: rueda;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 .ni-coche:after {
   left: 8.8125rem; }
 
 /*------------------------- END RUEDAS -----------------------*/
 /*KEYFRAMES*/
+@keyframes fondo {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -800px 0; } }
+
+@keyframes coche {
+  0% {
+    left: -250px; }
+  100% {
+    left: calc(50% - 100px); } }
+
+@keyframes rueda {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
