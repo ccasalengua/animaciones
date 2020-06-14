@@ -32,7 +32,6 @@ $browser-context: 16; // Default
 	text-transform: uppercase;
 	color: #FFF;
 	background: #f25944;
-	transition: background ease 0.3s;
 	
 	&:hover {
 		background: #243752;
@@ -48,7 +47,7 @@ $browser-context: 16; // Default
 	box-shadow: 0 0 15px rgba(66, 66, 66, 0.4);
 	left: rem(-320);
 	top: 0;
-	transition: left ease 0.8s;
+
 	&__close {
 		line-height: rem(56);
 		padding: 0;
@@ -60,7 +59,6 @@ $browser-context: 16; // Default
 		text-transform: uppercase;
 		color: #FFF;
 		background: #141414;
-		transition: background ease 0.3s;
 		position: absolute;
 		font-size: 1.3em;
 		left: 100%;
@@ -88,7 +86,6 @@ $browser-context: 16; // Default
 		line-height: rem(56);
 		color: inherit;
 		text-decoration: none;
-		transition: background ease 0.9s, color ease 0.3s;
 		
 		&:hover {
 			color: #FFF;
@@ -124,12 +121,3 @@ $browser-context: 16; // Default
 	
 	
 /*KEYFRAMES*/
-
-@keyframes fondo {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: -800px 0;
-	}
-}
