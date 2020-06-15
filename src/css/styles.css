@@ -43,7 +43,7 @@
     color: #FFF;
     background: #141414;
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     left: 100%;
     z-index: 2; }
     .ni-nav__close:hover {
@@ -56,7 +56,7 @@
   .ni-nav__menu-item {
     border-bottom: 1px solid rgba(199, 199, 199, 0.25); }
   .ni-nav__menu-link {
-    padding: 0 30px;
+    padding: 0 1.875rem;
     display: block;
     line-height: 3.5rem;
     color: inherit;
